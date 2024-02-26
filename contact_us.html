@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viweport" content="with=device-width, initial-scale=1.0">
+    <title>The Eatery</title>
+    <link rel="stylesheet" href="C:\Users\sinet\OneDrive\Uni\Done assiments\Web_development\contact_us.css">
+    
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--------------------------google fonts-------------------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+        
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <!---navigation bar-->
+            <a href="home_page.html"><img src="images/black-2516434_1280.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                
+                <i class="fa-solid fa-xmark icon" onclick="hidemenu()"></i>
+               
+                
+                <ul>
+                    <li><a href="C:\Users\sinet\OneDrive\Uni\Done assiments\Web_development\home_page.html">HOME</a></li>
+                    <li><a href="C:\Users\sinet\OneDrive\Uni\Done assiments\Web_development\about_us_page.html">ABOUT US</a></li>
+                    <li><a href="C:\Users\sinet\OneDrive\Uni\Done assiments\Web_development\gallery_menu.html">GALLERY & MENU</a></li>
+                    <li><a href="C:\Users\sinet\OneDrive\Uni\Done assiments\Web_development\contact_us.html">CONTACT US</a></li>
+                        
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars icon" onclick="showmenu()"></i> 
+            
+            
+        </nav>
+        
+    </section>
+
+<div class="tittle">
+    <h2>Give your feedback to us!</h2>
+</div>
+
+<!--------------------testimonials-------------------->
+<div class="testimonials">
+    <div class="testimonial">
+      <img src="images/testimonials/male-7275449_1280.jpg">
+      <div class="content">
+        <p>"I had an amazing experience with the eatery. The service was excellent, and the team was very professional."</p>
+      </div>
+      <div class="author">Shane Fernando</div>
+    </div>
+  
+    <div class="testimonial">
+      <img src="images/testimonials/people-875597_1280.jpg" >
+      <div class="content">
+        <p>"The product exceeded my expectations. I would highly recommend it to anyone looking for a greate meal."</p>
+      </div>
+      <div class="author">J.D. Wickremasinghe</div>
+    </div>
+  
+  
+  </div>
+
+
+
+
+<!-----------------------feedback forum------------------->
+<section>
+    <form action="#" method="post">
+        <label for="fullName">Full Name</label>
+<input type="text" id="fullName" name="fullName" required>
+
+<label for="age">Age</label>
+<input type="text" id="age" name="age" required>
+
+<label for="birthdate">Birthdate</label>
+<input type="date" id="birthdate" name="birthdate" required>
+
+<label>Gender</label>
+<input type="radio" id="male" name="gender" value="male" required>
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female" required>
+<label for="female">Female</label>
+<input type="radio" id="other" name="gender" value="other" required>
+<label for="other">Other</label>
+
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required>
+
+<label for="contactNumber">Contact Number</label>
+<input type="tel" id="contactNumber" name="contactNumber" required>
+
+<label>Contact Methods</label>
+<input type="checkbox" id="emailCheckbox" name="contactMethods[]" value="email">
+<label for="emailCheckbox">Email</label>
+<input type="checkbox" id="callCheckbox" name="contactMethods[]" value="call">
+<label for="callCheckbox">Call</label>
+<input type="checkbox" id="textCheckbox" name="contactMethods[]" value="text">
+<label for="textCheckbox">Text</label>
+
+<label for="feedback">Feedback</label>
+<textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+
+      </form>
+</section>
+
+    <script src="C:\Users\sinet\OneDrive\Uni\Done assiments\Web_development\contact.js"></script>
+    <footer>
+        <section class="footer-base">
+            <div class="socialicons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+        
+            </div>
+            <div class="name">
+                <ul>
+                    <li><a href="C:\Users\sinet\OneDrive\Uni\Done assiments\Web_development\home_page.html">HOME</a></li>
+                    <li><a href="C:\Users\sinet\OneDrive\Uni\Done assiments\Web_development\gallery_menu.html">GALLERY</a></li>
+                    <li><a href="C:\Users\sinet\OneDrive\Uni\Done assiments\Web_development\about_us_page.html">ABOUT US</a></li>
+                    <li><a href="C:\Users\sinet\OneDrive\Uni\Done assiments\Web_development\contact_us.html">CONTACT US</a></li>  
+                </ul>
+            </div>  
+        
+            <div class="copyright">
+                <p>Copyright @copy;2023 designed by <span class="designer">Sinethi Hasara</span></p>
+        
+            </div>
+        
+        
+        </section>
+    </footer>
+
+
+</body>
+
+</html>

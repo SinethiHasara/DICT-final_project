@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color:#E5E1D8;
+}
+
+.icon{
+    color: transparent;
+}
+
+
+
+/*------------------below are the styles for the header section-----------------*/
+nav img{
+    width: 150px;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position:relative ;
+}
+.nav-links ul li a{
+    color: #725656;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height:2px;
+    background:#725656;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+
+
+/*-------------------these styles are only applicable for the smaller screen devices------------*/
+
+@media(max-width:800px){
+      
+    .nav-links ul li{
+        display: block;
+    
+    }
+
+    .nav-links ul li::after{
+         background:  #1f0707;
+
+    }
+    .nav-links ul li:hover::after{
+        width: 100%;
+    
+    }
+
+    .nav-links ul li a{
+        font-size: 16px;
+        color: #725656;
+        
+    }
+
+    .nav-links{
+        position: absolute;
+        background:#E1DACA;
+        height: 100vh;
+        width: 200px;
+        top: 0; 
+        right:0;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+         
+    }
+
+    .icon{
+        display: block;
+        color:#725656;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+ }
+
+    .nav-links ul{
+        padding:30px;
+    }
+
+    .name ul{
+        flex-direction: column;
+    
+      }
+    
+      .name ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    
+      }
+}
+
+
+.tittle h2{
+    text-align: center;
+    font-size: 32px;
+    color: #1f0707;
+}
+
+
+
+
+
+/*-----------------testimonials------------------------------*/
+.testimonials {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .testimonial {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+  }
+
+  .testimonial img {
+    border-radius: 30%;
+    max-width: 80px;
+    margin-right: 10px;
+  }
+
+  .testimonial .content {
+    font-style: italic;
+  }
+
+  .testimonial .author {
+    font-weight: bold;
+  }
+
+
+
+
+/*--------------form----------------------*/
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 40px;
+  }
+  
+  button {
+    background-color: #cd9d9d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #693f3f;
+  }
+
+
+
+
+
+
+/*-------------footer styles-----------------------*/
+footer{
+    background-color:#C1B6A4;
+}
+
+.footer-base{
+    width: 100%;
+    pad: 70px 30px 20px;
+}
+.socialicons{
+    display: flex;
+    justify-content: center;  
+    padding: 30px;
+}
+.socialicons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialicons a i{
+    font-size:2em ;
+    color: #1b0606;
+    opacity: 0.9;
+}
+   /*hover*/
+.socialicons a:hover{
+    background-color: #1b0606;
+    transition: 0.5s;
+
+}
+.socialicons a:hover i{
+    color: white;
+    transition: 0.5s;
+
+}
+.name{
+    margin: 30px 0;
+}
+
+.name ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.name ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration:none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.name ul li a:hover{
+    opacity: 1;
+}
+.copyright{
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
